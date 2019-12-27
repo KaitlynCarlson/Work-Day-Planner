@@ -1,0 +1,9 @@
+.container calendar {
+  margin-top: 5%;
+}
+.row {
+  align-items: center;
+}
+#timeCol {
+  border-right: 0.25px solid darkgrey;
+}

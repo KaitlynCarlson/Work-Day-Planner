@@ -1,9 +1,20 @@
+body {
+  background-image: url(../Work-Day-Planner/vintage-wallpaper/vintage-wallpaper.png);
+}
 .container calendar {
   margin-top: 5%;
 }
 .row {
-  align-items: center;
+  padding: 10px;
 }
-#timeCol {
-  border-right: 0.25px solid darkgrey;
+
+#Moment-Time {
+  font-size: 16px;
+  font-weight: bold;
+}
+[contenteditable="true"] {
+  display: block;
+  font-size: 0.75em;
+  font-family: courier, sans-serif;
+  line-height: 1;
 }

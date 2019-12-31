@@ -16,15 +16,15 @@
   <body>
     <div class="jumbotron">
       <div class="row">
-        <div class="col-3">
+        <div class="col-lg-1 col-sm-12">
           <img
             src="https://cdn.pixabay.com/photo/2016/07/28/20/42/icon-1549619_960_720.png"
             height="75"
             width="75"
           />
         </div>
-        <div class="col-9">
-          <h1 class="display-4">Work Day Itinerary</h1>
+        <div class="col-lg-11 col-sm-12">
+          <h1 class="display-4" id="WDI">Work Day Itinerary</h1>
         </div>
       </div>
       <hr class="my-4" />
@@ -36,13 +36,15 @@
     </div>
 
     <div class="container calendar">
-      <div class="jumbotron">
-        <div class="container hour">
+      <div class="jumbotron calendar">
+        <div class="container hourNine">
           <div class="row">
-            <div class="col" id="timeCol">9:00 AM</div>
-            <div class="col-6 form-group">
-              <p id="NineAM" contenteditable="true"></p>
-            </div>
+            <div class="col" id="timeColNine">9:00 AM</div>
+            <div
+              class="col-8 form-group"
+              contenteditable="true"
+              id="nineAMEventInput"
+            ></div>
             <div class="col">
               <button
                 type="button"
@@ -55,12 +57,14 @@
           </div>
         </div>
         <hr class="my-4" />
-        <div class="container hour">
+        <div class="container hourTen">
           <div class="row">
-            <div class="col" id="timeCol">10:00 AM</div>
-            <div class="col-6 form-group">
-              <p id="TenAM" contenteditable="true"></p>
-            </div>
+            <div class="col" id="timeColTen">10:00 AM</div>
+            <div
+              class="col-8 form-group"
+              contenteditable="true"
+              id="tenAMEventInput"
+            ></div>
             <div class="col">
               <button
                 type="button"
@@ -73,12 +77,14 @@
           </div>
         </div>
         <hr class="my-4" />
-        <div class="container hour">
+        <div class="container hourEleven">
           <div class="row">
-            <div class="col" id="timeCol">11:00 AM</div>
-            <div class="col-6 form-group">
-              <p id="ElevenAM" contenteditable="true"></p>
-            </div>
+            <div class="col" id="timeColEleven">11:00 AM</div>
+            <div
+              class="col-8 form-group"
+              contenteditable="true"
+              id="ElevenAMEventInput"
+            ></div>
             <div class="col">
               <button
                 type="button"
@@ -92,12 +98,14 @@
         </div>
         <hr class="my-4" />
 
-        <div class="container hour">
+        <div class="container hourNoon">
           <div class="row">
-            <div class="col" id="timeCol">12:00 PM</div>
-            <div class="col-6 form-group">
-              <p id="Noon" contenteditable="true"></p>
-            </div>
+            <div class="col" id="timeColNoon">12:00 PM</div>
+            <div
+              class="col-8 form-group"
+              contenteditable="true"
+              id="noonEventInput"
+            ></div>
             <div class="col">
               <button
                 type="button"
@@ -111,12 +119,14 @@
         </div>
         <hr class="my-4" />
 
-        <div class="container hour">
+        <div class="container hourThirteen">
           <div class="row">
-            <div class="col" id="timeCol">1:00 PM</div>
-            <div class="col-6 form-group">
-              <p id="OnePM" contenteditable="true"></p>
-            </div>
+            <div class="col" id="timeColOne">1:00 PM</div>
+            <div
+              class="col-8 form-group"
+              contenteditable="true"
+              id="onePMEventInput"
+            ></div>
             <div class="col">
               <button
                 type="button"
@@ -130,12 +140,14 @@
         </div>
         <hr class="my-4" />
 
-        <div class="container hour">
+        <div class="container hourFourteen">
           <div class="row">
-            <div class="col" id="timeCol">2:00 PM</div>
-            <div class="col-6 form-group">
-              <p id="TwoPM" contenteditable="true"></p>
-            </div>
+            <div class="col" id="timeColTwo">2:00 PM</div>
+            <div
+              class="col-8 form-group"
+              contenteditable="true"
+              id="twoPMEventInput"
+            ></div>
             <div class="col">
               <button
                 type="button"
@@ -148,12 +160,14 @@
           </div>
         </div>
         <hr class="my-4" />
-        <div class="container hour">
+        <div class="container hourFifteen">
           <div class="row">
-            <div class="col" id="timeCol">3:00 PM</div>
-            <div class="col-6 form-group">
-              <p id="ThreePM" contenteditable="true"></p>
-            </div>
+            <div class="col" id="timeColThree">3:00 PM</div>
+            <div
+              class="col-8 form-group"
+              contenteditable="true"
+              id="threePMEventInput"
+            ></div>
             <div class="col">
               <button
                 type="button"
@@ -167,12 +181,14 @@
         </div>
         <hr class="my-4" />
 
-        <div class="container hour">
+        <div class="container hourSixteen">
           <div class="row">
-            <div class="col" id="timeCol">4:00 PM</div>
-            <div class="col-6 form-group">
-              <p id="FourPM" contenteditable="true"></p>
-            </div>
+            <div class="col" id="timeColFour">4:00 PM</div>
+            <div
+              class="col-8 form-group"
+              contenteditable="true"
+              id="fourPMEventInput"
+            ></div>
             <div class="col">
               <button
                 type="button"
@@ -186,12 +202,14 @@
         </div>
         <hr class="my-4" />
 
-        <div class="container hour">
+        <div class="container hourSeventeen">
           <div class="row">
-            <div class="col" id="timeCol">5:00 PM</div>
-            <div class="col-6 form-group">
-              <div id="FivePM" contenteditable="true"></div>
-            </div>
+            <div class="col" id="timeColFive">5:00 PM</div>
+            <div
+              class="col-8 form-group"
+              contenteditable="true"
+              id="fivePMEventInput"
+            ></div>
             <div class="col">
               <button
                 type="button"

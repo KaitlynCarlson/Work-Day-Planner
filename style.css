@@ -14,7 +14,7 @@ body {
 }
 [contenteditable="true"] {
   display: block;
-  font-size: 0.75em;
-  font-family: courier, sans-serif;
-  line-height: 1;
+  font-size: 1em;
+  font-family: "Helvetica Neue, Helvetica, Arial, sans-serif";
+  line-height: 1.5;
 }

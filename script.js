@@ -93,7 +93,7 @@ $(document).ready(function() {
     }
   }
 
-  // var nineAMEvents = document.querySelector("#nineAMEventInput");
+  // Nine AM Events
   var nineAMEvents = localStorage.getItem("nineAMEvents");
   document.querySelector("#nineAMEventInput").innerHTML = $(
     "#NineAMSaveButton"
@@ -103,7 +103,112 @@ $(document).ready(function() {
       JSON.stringify($("#nineAMEventInput").text())
     );
   });
-  $("#nineAMEventInput").text(nineAMEvents);
+  $("#nineAMEventInput").text(JSON.parse(nineAMEvents));
+  // Ten AM Events
+
+  var tenAMEvents = localStorage.getItem("tenAMEvents");
+  document.querySelector("#tenAMEventInput").innerHTML = $(
+    "#TenAMSaveButton"
+  ).on("click", function setTenAMEvents() {
+    localStorage.setItem(
+      "tenAMEvents",
+      JSON.stringify($("#tenAMEventInput").text())
+    );
+  });
+  $("#tenAMEventInput").text(JSON.parse(tenAMEvents));
+
+  // Eleven AM Events
+
+  var elevenAMEvents = localStorage.getItem("elevenAMEvents");
+  document.querySelector("#elevenAMEventInput").innerHTMLL = $(
+    "#ElevenAMSaveButton"
+  ).on("click", function setElevenAMEvents() {
+    localStorage.setItem(
+      "elevenAMEvents",
+      JSON.stringify($("#elevenAMEventInput").text())
+    );
+  });
+  $("#elevenAMEventInput").text(JSON.parse(elevenAMEvents));
+
+  // Noon Events
+  var noonEvents = localStorage.getItem("noonEvents");
+  document.querySelector("#noonEventInput").innerHTML = $("#NoonSaveButton").on(
+    "click",
+    function setNoonEvents() {
+      localStorage.setItem(
+        "noonEvents",
+        JSON.stringify($("#noonEventInput").text())
+      );
+    }
+  );
+  $("#noonEventInput").text(JSON.parse(noonEvents));
+
+  // One PM Events
+
+  var onePMEvents = localStorage.getItem("onePMEvents");
+
+  document.querySelector("#onePMEventInput").innerHTML = $(
+    "#OnePMSaveButton"
+  ).on("click", function setOnePMEvents() {
+    localStorage.setItem(
+      "onePMEvents",
+      JSON.stringify($("#onePMEventInput").text())
+    );
+  });
+  $("#onePMEventInput").text(JSON.parse(onePMEvents));
+
+  // Two PM Events
+
+  var twoPMEvents = localStorage.getItem("twoPMEvents");
+
+  document.querySelector("#twoPMEventInput").innerHTML = $(
+    "#TwoPMSaveButton"
+  ).on("click", function setTwoPMEvents() {
+    localStorage.setItem(
+      "twoPMEvents",
+      JSON.stringify($("#twoPMEventInput").text())
+    );
+  });
+  $("#twoPMEventInput").text(JSON.parse(twoPMEvents));
+
+  // Three PM Events
+  var threePMEvents = localStorage.getItem("threePMEvents");
+
+  document.querySelector("#threePMEventInput").innerHTML = $(
+    "#ThreePMSaveButton"
+  ).on("click", function setThreePMEvents() {
+    localStorage.setItem(
+      "threePMEvents",
+      JSON.stringify($("#threePMEventInput").text())
+    );
+  });
+  $("#threePMEventInput").text(JSON.parse(threePMEvents));
+
+  //Four PM Events
+
+  var fourPMEvents = localStorage.getItem("fourPMEvents");
+  document.querySelector("#fourPMEventInput").innerHTML = $(
+    "#FourPMSaveButton"
+  ).on("click", function setFourPMEvents() {
+    localStorage.setItem(
+      "fourPMEvents",
+      JSON.stringify($("#fourPMEventInput").text())
+    );
+  });
+  $("#fourPMEventInput").text(JSON.parse(fourPMEvents));
+
+  // Five PM Events
+  var fivePMEvents = localStorage.getItem("fivePMEvents");
+
+  document.querySelector("#fivePMEventInput").innerHTML = $(
+    "#FivePMSaveButton"
+  ).on("click", function setFivePMEvents() {
+    localStorage.setItem(
+      "fivePMEvents",
+      JSON.stringify($("#fivePMEventInput").text())
+    );
+  });
+  $("#fivePMEventInput").text(JSON.parse(fivePMEvents));
 
   colorRows();
 });

@@ -13,8 +13,6 @@ $(document).ready(function() {
     $("#Moment-Time").text(moment().format("A hh:mm:ss"));
   }, 100);
 
-  console.log(moment().hour());
-
   function colorRows() {
     if (moment().hour() === 9) {
       $(".hourNine").css("background-color", "#38C788");
@@ -95,17 +93,17 @@ $(document).ready(function() {
     }
   }
 
-  var nineAMEvents = document.querySelector("#nineAMEventInput");
-
+  // var nineAMEvents = document.querySelector("#nineAMEventInput");
+  var nineAMEvents = localStorage.getItem("nineAMEvents");
   document.querySelector("#nineAMEventInput").innerHTML = $(
     "#NineAMSaveButton"
-  ).on("click", function(event) {
-    console.log($("#nineAMEventInput").text());
+  ).on("click", function setNineAMEvents() {
     localStorage.setItem(
       "nineAMEvents",
       JSON.stringify($("#nineAMEventInput").text())
     );
   });
+  $("#nineAMEventInput").text(nineAMEvents);
 
   colorRows();
 });

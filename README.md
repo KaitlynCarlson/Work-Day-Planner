@@ -1,6 +1,6 @@
 # Daily Planner Application
 
-![Landing Page](../Work-Day-Planner/README-IMG/Landing.png)
+![Landing Page](README-IMG/Landing.png)
 [Visit the Work Day Itinerary Page](https://kaitlyncarlson.github.io/Work-Day-Planner/)
 
 ## Purpose

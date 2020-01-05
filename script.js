@@ -1,7 +1,5 @@
 $(document).ready(function() {
-  var now = momentInterval;
-
-  var momentInterval = setInterval(function() {
+  setInterval(function() {
     $("#Moment-Date").text(
       moment().format("YYYY MMMM DD") +
         " " +
@@ -10,7 +8,7 @@ $(document).ready(function() {
           .substring(0, 3)
           .toUpperCase()
     );
-    $("#Moment-Time").text(moment().format("A hh:mm:ss"));
+    $("#Moment-Time").text(moment().format("hh:mm:ss A"));
   }, 100);
 
   function colorRows() {
@@ -94,6 +92,7 @@ $(document).ready(function() {
   }
 
   // Nine AM Events
+
   var nineAMEvents = localStorage.getItem("nineAMEvents");
   document.querySelector("#nineAMEventInput").innerHTML = $(
     "#NineAMSaveButton"
@@ -104,6 +103,7 @@ $(document).ready(function() {
     );
   });
   $("#nineAMEventInput").text(JSON.parse(nineAMEvents));
+
   // Ten AM Events
 
   var tenAMEvents = localStorage.getItem("tenAMEvents");

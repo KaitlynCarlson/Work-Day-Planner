@@ -3,9 +3,18 @@ body {
 }
 .container calendar {
   margin-top: 5%;
+  display: grid;
+  align-content: center;
 }
 .row {
   padding: 10px;
+}
+.col {
+  display: grid;
+  align-content: center;
+}
+.form-group {
+  margin-bottom: 0;
 }
 
 #Moment-Time {
@@ -14,7 +23,31 @@ body {
 }
 [contenteditable="true"] {
   display: block;
+  font-size: 1.5em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 2;
+  font-weight: 350;
+}
+.calendar-image {
+  display: grid;
+  justify-content: center;
+}
+#WDI {
+  display: grid;
+  justify-content: flex-start;
+  padding: 0;
+}
+.col {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.container {
+  display: grid;
+  align-items: center;
+}
+.btn-outline-dark {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
-  font-family: "";
-  line-height: 1.5;
+  font-weight: 400;
 }
